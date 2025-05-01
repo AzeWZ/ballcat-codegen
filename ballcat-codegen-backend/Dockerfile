@@ -13,5 +13,5 @@ VOLUME /tmp
 ARG JAR_FILE=ballcat-codegen.jar
 ADD target/${JAR_FILE} /workspace/app.jar
 
-EXPOSE 8080
+EXPOSE 7777
 ENTRYPOINT ["java","-jar","-Dfile.encoding=UTF-8","-Dsun.jnu.encoding=UTF-8","/workspace/app.jar"]
