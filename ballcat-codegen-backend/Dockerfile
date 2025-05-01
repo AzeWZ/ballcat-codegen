@@ -1,10 +1,10 @@
-FROM openjdk:8
+FROM superdafu-docker.pkg.coding.net/start/1024/openjdk:8
 MAINTAINER john
 
-ENV TZ 'Asia/Shanghai'
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
-ENV LC_ALL en_US.UTF-8
+ENV TZ='Asia/Shanghai'
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US:en
+ENV LC_ALL=en_US.UTF-8
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
